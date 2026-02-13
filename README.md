@@ -5,6 +5,18 @@ Segment tumor regions in MRI slices using:
 - Global Otsu Thresholding
 - Adaptive Sauvola Thresholding
 
+## Dataset
+Kaggle Brain Tumor Segmentation Dataset:  
+https://www.kaggle.com/datasets/nikhilroxtomar/brain-tumor-segmentation
+
+Dataset is not included in this repository due to size constraints.
+
+After downloading, place the dataset in the following structure:
+
+data/
+ ├── images/
+ └── masks/
+
 ## Evaluation Metrics
 - Dice Score
 - Jaccard Index
