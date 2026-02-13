@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+
+# Dataset (DO NOT PUSH DATA)
+data/
+
+# Outputs
+outputs/
+results.csv
+
+# System files
+.DS_Store
+Thumbs.db
