@@ -176,5 +176,5 @@ Watershed segmentation with over-segmentation control.
 AUTHOR
 ------------------------------------------------------------
 
-Subhav Pathak  
+Subhav Kumar  
 DL Medical Image Processing
