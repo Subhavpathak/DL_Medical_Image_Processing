@@ -66,7 +66,53 @@ Adaptive thresholding (Sauvola) performs better in non-uniform illumination comp
 
 
 ------------------------------------------------------------
-ASSIGNMENT 2 – Retinal Vessel Extraction (Niblack vs Sauvola)
+ASSIGNMENT 2 – White Blood Cell Segmentation (K-Means vs Fuzzy C-Means)
+------------------------------------------------------------
+
+Task:
+Segment white blood cell nucleus and cytoplasm using hard and soft clustering techniques.
+
+Methods:
+- K-Means clustering (Hard clustering)
+- Fuzzy C-Means clustering (Soft clustering)
+- Boundary extraction using morphological gradient
+- Boundary Accuracy, Precision, Recall, F1 Score evaluation
+
+Dataset:
+BCCD – Blood Cell Dataset with Masks  
+https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask  
+
+Expected Structure:
+
+BCCD Dataset with mask/
+ ├── train/
+ │     ├── original/
+ │     └── mask/
+ └── test/
+       ├── original/
+       └── mask/
+
+Run:
+python assignment2_WBC_Segmentation.py
+
+Output:
+- Displays segmentation comparison:
+  Original | Ground Truth | K-Means | Fuzzy C-Means
+- Prints dataset average boundary metrics:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1 Score
+- Compares hard vs soft clustering performance
+
+Learning:
+Hard clustering assigns each pixel to exactly one cluster.
+Soft clustering assigns membership probabilities, handling uncertainty better.
+Boundary-based evaluation measures structural segmentation quality.
+
+
+------------------------------------------------------------
+ASSIGNMENT 3 – Retinal Vessel Extraction (Niblack vs Sauvola)
 ------------------------------------------------------------
 
 Task:
@@ -111,7 +157,7 @@ Parameter tuning affects sensitivity vs over-segmentation trade-off.
 
 
 ------------------------------------------------------------
-ASSIGNMENT 3 – Cell Nuclei Separation (Watershed)
+ASSIGNMENT 4 – Cell Nuclei Separation (Watershed)
 ------------------------------------------------------------
 
 Task:
